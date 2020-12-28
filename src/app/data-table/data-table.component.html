@@ -1,0 +1,12 @@
+<table style="width:100%;">
+  <thead>
+    <tr>
+      <th *ngFor="let c of columns" [ngStyle]="{ width: c.width }">
+        {{c.fieldTitle}}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngTemplateOutlet="rowTemplate"></ng-container>
+  </tbody>
+</table>
